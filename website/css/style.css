@@ -110,10 +110,6 @@ a{
 
 /*hover properties*/
 
-.navigation-sec .navbar .nav-list li:hover{
-	background: rgba(0,0,0,0.8);
-	color: white;
-}
 
 
 
@@ -127,17 +123,11 @@ a{
 	  	
 	text-decoration: none;
   	display: block;
-}
-
-
-.dropdown:hover .dropdown-content {
-	
-
-	display: block;
-	top: 100%;
-	left: 0;
 
 }
+
+
+
 
 
 
@@ -781,170 +771,340 @@ a{
 }
 /*mobile menu css*/
 
-
-
-@media only screen and (max-width: 1024px) and (min-width: 0px)
-{
-	.mobile-menu .nav-btn .nav-button {
-	display: block;
+a#phone_call2{
+	font-size: 15px;
+	font-weight: bold;
+	line-height: 29px;
+	margin-right: 50px;
+	text-align: right;
 }
-.mobile-menu .mobile{
-	display: block;
-}
-.nav-btn {
-    min-height: 50px;
-    background: #243E57;
-   
-}
-.nav-button{
-	background: #4E9FDE;
-	line-height: 40px;
-	text-align: center;
-	height: 40px;
-	font-size: 30px;
-	 display: block;
-	margin: 5px 0 0 5px;
-	position: absolute;
-	top: 0;
-	width: 40px;
-}
-
-.mobile-menu-icon_close{
-	display: none;
-}
-.call{
-	display: block;
-	position: absolute;
-	height: 40px;
-	margin-top: 0;
-	right: 5px;
-	top: 5px;
-	background: #4E9FDE;
-	font-size: 40px;
-	line-height: 40px;
-	text-align: center;
-	width: 40px;
-}
-
-#coopsomail{
-	display: block;
-	line-height: 20px;
-	padding:10px 10px 10px 17px;
-	text-decoration: none;
-	position: absolute;
-	margin:auto;
-	left: 0;
-	right: 0;
-	text-align: center;
+a#phone_call{
+	font-size: 15px;
 	font-weight: bold;
 }
-#coopsomail:before{
-	font-family: FontAwesome;
-	content:"\f0e0";
-	position: absolute;
-	top: 10px;
-	font-size: 18px;
-	margin-left: -27px;
-}
-.phone-call{
-	padding: 10px 10px 10px 40px;
-	line-height: 20px;
-	left: 0;
-	text-align: right !important;
-	position: absolute;
-	padding-right: 20px;
-	top: 119px;
-	text-decoration: none;
-	margin: 0;
-	font-size: 14px !important;
 
+.phone-section{
+	display: none;
 }
-.navbar{
+
+
+@media(min-width:1025px){
+		.dropdown:hover .dropdown-content {
+			display: block;
+			top: 100%;
+			left: 0;
+		}
+		.navigation-sec .navbar .nav-list li:hover {
+	    background: rgba(0,0,0,0.8);
+	    color: white;
+	}
+	}
+@media only screen and (max-width: 1024px){
+
+	.logosection{
+		height: auto;
+		margin: 0 auto;
+	}
+	.top-slider{
+		margin-top: 125px;
+	}
+
+		
+	.mobile-menu .nav-btn .nav-button {
+		display: block;
+	}
+	.mobile-menu .mobile{
+		display: block;
+	}
+	.nav-btn {
+	    min-height: 50px;
+	    background: #243E57;
+	   
+	}
+
+	.nav-button{
+		background: #4E9FDE;
+		line-height: 40px;
+		text-align: center;
+		height: 40px;
+		font-size: 30px;
+		 display: block;
+		margin: 5px 0 0 5px;
+		position: absolute;
+		top: 0;
+		width: 40px;
+	}
+
+	.mobile-menu-icon_close{
+		display: none;
+	}
+	.call{
+		display: block;
+		position: absolute;
+		height: 40px;
+		margin-top: 0;
+		right: 5px;
+		top: 5px;
+		background: #4E9FDE;
+		font-size: 40px;
+		line-height: 40px;
+		text-align: center;
+		width: 40px;
+	}
+
+	#coopsomail{
+		top: 5px;
+		width: 50%;
+		display: block;
+		line-height: 20px;
+		padding:10px 10px 10px 17px;
+		text-decoration: none;
+		position: absolute;
+		margin:auto;
+		left: 0;
+		right: 0;
+		text-align: center;
+		font-weight: bold;
+	}
+	#coopsomail:before{
+		font-family: FontAwesome;
+		content:"\f0e0";
+		position: absolute;
+		top: 10px;
+		font-size: 18px;
+		margin-left: -27px;
+	}
+	.phone-call{
+		padding: 10px 10px 10px 40px;
+		line-height: 20px;
+		left: 0;
+		text-align: right !important;
+		position: absolute;
+		padding-right: 20px;
+		top: 119px;
+		text-decoration: none;
+		margin: 0;
+		font-size: 14px !important;
+
+	}
+	.navbar{
+		
+		display: none;
+		background: #243E57;
+
+	}
+
+
+	ul.nav-list{
+		color: white;
+		width: 100%;
+		float: none;
+		display: inline-block;
+		background-color: transparent;
+		top:-10px;	
+		clear: both;
+		z-index: 9999;
+		height: auto;
+	}
+	.active{
+		color: white;
+		background: #243E57;
+	}
+
+	.navigation-sec .navbar .nav-list li{
+		width: 100%;
+		text-align: left;
+		position: static;
+		margin: 0;
+		opacity: 1;
+		border-bottom : 2px solid grey;
+	}
+	.navigation-sec .navbar.active{
+		display: block;
+		width: 100%;
+	}
+	.navigation-sec .navbar .nav-list li a{
+		padding: 10px 10px 10px 20px;
+		font-size: 14px;
+		line-height: 20px;
+	}
+	.dropdown-content{
+		position:relative;
+		padding: 0;
+		margin-top: 15px;
+
+		border-top:1px solid;
+	}
+	.dropdown-content li {
+		background: #59ABE3;
+		width: 100%;
+
+	} 
 	
-	display: none;
-	background: #243E57;
+	.dropdown > a:after{
+		content: '\f063';
+		font-family: FontAwesome;
+		position: absolute;
+		right: 17px;
+	}
+	.dropdown.active > a:after{
+		content: '\f062';
+		font-family: FontAwesome;
+		position: absolute;
+		right: 17px;
 
-}
+	}
+	.navigation-sec .navbar .nav-list li{
+		padding-left: 0;
+		padding-right: 0;
+		padding-top: 10px;
+		padding-bottom: 10px;
+	}
+	.contact-sec{
+		display: none;
+	}
 
+	.footer-sec{
+		
+	}
+	.services .weoffer{
+		margin-top: 12px;
+	}
+	.row{
+		display: block;
+	}
+	.footer-sec .footer-container{
+		display: block;
 
-ul.nav-list{
-	color: white;
-	width: 100%;
-	float: none;
-	display: inline-block;
-	background-color: transparent;
-	top:-10px;	
-	clear: both;
-	z-index: 9999;
-	height: auto;
-}
-.active{
-	color: white;
-	background: #243E57;
-}
+	}
+	.footer-sec .footer-container .footer{
+		width: 100%;
 
-.navigation-sec .navbar .nav-list li{
-	width: 100%;
-	text-align: left;
-	position: static;
-	margin: 0;
-	opacity: 1;
-	border-bottom : 2px solid grey;
-}
-.navigation-sec .navbar.active{
-	display: block;
-	width: 100%;
-}
-.navigation-sec .navbar .nav-list li a{
-	padding: 10px 10px 10px 20px;
-	font-size: 14px;
-	line-height: 20px;
-}
-.contact-sec{
-	display: none;
-}
+	}
+	.footer-sec .footer-container .footer.aboutus{
+		display: none;
 
-.footer-sec{
+	}
+	.footer-sec .footer-container .footer.company{
+		display: none;
+	}
+	.footer-sec .footer-container .footer .desc{
+		text-align: center;
+	}
+	.footer-sec .footer-container .footer .head{
+		text-align: center;
+	}
+	.top-head .inner-header{
+		padding: 0;
+	}
+	#logo{
+		height: auto;
+		margin: 0 auto;
+
+	}
+	.address{
+		float: left;
+		width: 100%;
+		font-size: 12px;	
+	}
+	a#phonecall{
+		width: 100%;
+		text-align: right !important;
+		line-height: 20px;
+		padding: 15px 10px 10px 40px;
+		top: 100px;
+		color: white;
+
+	}
+	a#phonecall2{
+		width: 100%;
+		text-align: right !important;
+		line-height: 20px;
+		padding: 15px 10px 10px 40px;
+		margin-top: 5px;
+		color: white;
+	}
+	.phone-section.active{
+
+		width: 100%;
+		right: 0;
+		transition: all 0.6s;
+		
+	}
+	a#phonecall:before{
+		font-family: FontAwesome;
+		content: "\f10b";
+		height: 30px;
+	}
+	a#phonecall2:before{
+		font-family: FontAwesome;
+		content: "\f10b";
+
+	}
+	.phone-section .coo_mobile{
+		
+		position: absolute;
+		float: right;
+		background: #243E57;
+		padding-left: 27px;
+		padding-right: 20px;
+		width: 100%;
+		left: 0;
+		margin: 0;
+		border-bottom: 1px solid #fff;
+		right: 0;
+	}
+	.accordion-container{
+		margin-top: 125px;
+		margin-bottom: 30px;
+		padding:0;
+	}
+	.accordion .question{
+		font-size: 13px;
+		padding-left: 0;
+
+	}
+
+	/*contacts us*/
+	.content .location-icon{
+		display: none;
+	}
+	.form{
+		width: 100%;
+		padding-left: 15px;
+		padding-right: 15px;
+	}
+	.form .col-sm{
+		width: 100%;
+	}
+	.content .headoffice{
+		width: 100%;
+	}
+	.content{
+		padding-left: 15px;
+		padding-right: 15px;
+	}
+	.entry-header{
+		padding-left: 15px;
+		padding-right: 15px;
+
+	}
+	.banner-slider{
+		margin-top: 125px;
+	}
+	.form .name{
+		padding-left: 0;
+		padding-right: 0;
+	}
+	.form .Company{
+		padding-left: 0;
+		padding-right: 0;
+	}
+	.container .content{
+		width: 100%;
+	}
 	
-}
-.services .weoffer{
-	margin-top: 12px;
-}
-.row{
-	display: block;
-}
-.footer-sec .footer-container{
-	display: block;
 
-}
-.footer-sec .footer-container .footer{
-	width: 100%;
-
-}
-.footer-sec .footer-container .footer.aboutus{
-	display: none;
-
-}
-.footer-sec .footer-container .footer.company{
-	display: none;
-}
-.footer-sec .footer-container .footer .desc{
-	text-align: center;
-}
-.footer-sec .footer-container .footer .head{
-	text-align: center;
-}
-.top-head .inner-header{
-	padding: 0;
-}
-#logo{
-	height: auto;
-}
-.address{
-	float: left;
-	width: 100%;
-	font-size: 12px;	
-}
 
 
 
@@ -956,7 +1116,6 @@ ul.nav-list{
 {
 	#coopsomail{
 		top:5px;
-
 		width: 56%;
 		font-size: 11px !important;
 	}
@@ -970,7 +1129,7 @@ ul.nav-list{
 		font-size: 21px !important;
 		line-height: 27px;
 		
-		margin-top: 50px;
+		margin-top: 15px;
 	}
 	.text{
 		text-align: center;
@@ -996,10 +1155,50 @@ ul.nav-list{
 
 {
 	#coopsomail {
-    top: -47px !important;
+    top: 5px !important;
     width: 56% !important;
     font-size: 15px !important;
     }
+}
+@media(min-width: 768px) and (max-width: 991px)
+{
+	.row{
+		display: flex;
+	}
+	.footer-sec .footer-container{
+		display: flex;
+	}
+	.footer-sec .footer-container .footer.aboutus{
+		display: block;
+	}
+	.footer-sec .footer-container .footer.company{
+		display: block;
+	}
+
+	.footer-sec .footer-container .footer{
+		width: 25%;
+	}
+
+	
+}
+@media(min-width: 992px) and (max-width: 1199px)
+{
+	.row{
+		display: flex;
+	}
+	.footer-sec .footer-container .footer{
+		width: 25%;
+	}
+	.footer-sec .footer-container{
+		display: flex;
+	}
+	.footer-sec .footer-container .footer.aboutus{
+		display: block;
+	}
+	.footer-sec .footer-container .footer.company{
+		display: block;
+	}
+	
 }
 
 

@@ -5,6 +5,7 @@
 		</title>
 		<link rel="stylesheet" type="text/css" href="css/style.css">
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.css" crossorigin="anonymous">
+
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<link rel="stylesheet" type="text/css" href="slick/slick.css"/>
 		<link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
@@ -47,7 +48,14 @@
 				<span class="call">
 					<i class="fa fa-mobile-phone"></i>	
 				</span>
-		</div>
+			</div>
+
+			<div class="phone-section">
+				<a id="phonecall" class="coo_mobile">+8780882871</a>
+				<a id="phonecall2" class="coo_mobile">+9333333333</a>
+			</div>
+
+
 						
 			<div class="top-head">
 				<div class="container">

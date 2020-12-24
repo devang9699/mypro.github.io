@@ -38,7 +38,9 @@
 					
 			
 					<div class="footer company">
-
+					<div class="head">
+						<h4>Company</h4>
+					</div>
 					<div class="desc">
 					<ul class="footer-list">
 						<li><a href="#">Home</a></li>

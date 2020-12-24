@@ -6,8 +6,9 @@
 			
 			?>
 
+			<div class="top-slider">
 
-			<div class="slick-slider">
+			<div class="slick_slider">
 
 
 				<img class="mySlides" src="https://www.conceptopensource.com/wp-content/uploads/2017/07/mobile-development.jpg" style="width:100%">
@@ -19,6 +20,7 @@
 
 				<img class="mySlides" src="https://www.conceptopensource.com/wp-content/uploads/2017/07/outsource-partner.jpg" style="width: 100%">	
 			</div>
+		</div>
 
 
 

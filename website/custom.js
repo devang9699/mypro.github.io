@@ -1,6 +1,6 @@
 $(document).ready(function(){
 
-	$('.slick-slider').slick({
+	$('.slick_slider').slick({
 		autoplay:true,
 		autoplaySpeed: 1000,
 		dots: true,
@@ -88,27 +88,38 @@ $(document).ready(function(){
 				if($('.navbar').hasClass('active'))
 				{
 					$('#logo').hide();
-					$('.mobile-menu-icon_open').hide();
-					$('.mobile-menu-icon_close').show();
+					$('.mobile-menu-icon_open').hide(200);
+					$('.mobile-menu-icon_close').show(200);
 
 	
 				}
 				else
 				{
 					$('#logo').show();
-					$('.mobile-menu-icon_close').hide();
-					$('.mobile-menu-icon_open').show();
+					$('.mobile-menu-icon_close').hide(200);
+					$('.mobile-menu-icon_open').show(200);
 				}
 				
 			}); 
 		$('.call').on("click",function()
 			{
-				alert('hii');
+				
+				$('.phone-section').toggleClass('active');
+				if($('.phone-section').hasClass('active'))
+				{
+					$('.phone-section').show(100);
+				}
+				else
+				{	
+					$('.phone-section').hide(100);
+				}
 			}); 
+		$('.dropdown').click(function(){
+			$(this).find('.dropdown-content').slideToggle();
+			$(this).toggleClass('active');
 
-
-
-  	});
+  		});
+});
 
 
 
